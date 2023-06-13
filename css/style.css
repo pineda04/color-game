@@ -52,7 +52,7 @@ h1 {
 }
 
 #colorDisplay{
-  font-size: 170%;
+  font-size: 4rem;
 }
 .selected{
   background-color: #fff;
@@ -96,4 +96,27 @@ button:hover{
 
 .botones button:last-child {
   margin-right: 0; 
+}
+
+@media screen and (max-width: 500px){
+  .square {    
+    margin: 0.3rem;    
+  }
+
+  #message{    
+    width:95%;
+    font-size: 180%;    
+  }
+
+  #colorDisplay{
+    font-size: 2.3rem;
+  }
+
+  .botones button {
+    margin-right: 1.5rem; 
+  }
+  
+  .botones button:last-child {
+    margin-right: 0; 
+  }
 }
