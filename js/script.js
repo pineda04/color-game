@@ -26,6 +26,7 @@ for (let i = 0; i < cuadrado.length; i++) {
       h1.style.backgroundColor = pickedColor;
       changeColors(pickedColor);
       mensaje.textContent = '¡Correcto!';
+      botonReset.textContent = 'Play Again?';
     } else {
       cuadrado[i].style.backgroundColor = cuadrosBg();
       mensaje.textContent = 'Intentalo nuevamente';
@@ -85,6 +86,7 @@ function reset() {
         h1.style.backgroundColor = pickedColor;
         changeColors(pickedColor);
         mensaje.textContent = '¡Correcto!';
+        botonReset.textContent = 'Play Again?';
       } else {
         cuadrado[i].style.backgroundColor = cuadrosBg();
         mensaje.textContent = 'Intentalo nuevamente';

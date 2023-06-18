@@ -15,8 +15,7 @@ body {
   margin: 0.5rem;
   padding-top: 10px;
   border-radius: 0.5rem; 
-  transition: 0.3s;
-  
+  transition: 0.3s;  
 }
 
 .container {
@@ -39,7 +38,6 @@ h1 {
   font-size: 210%;
   text-align: center;
   justify-content: center;
-
 }
 
 #stripe{
@@ -61,6 +59,13 @@ h1 {
 
 .square:hover{
   transform: scale(1.05);
+}
+
+.botones {
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  margin: 0 auto;
 }
 
 button{
@@ -86,18 +91,6 @@ button:hover{
   color: #000;
 }
 
-.botones{
-  text-align: center;  
-}
-
-.botones button {
-  margin-right: 5rem; 
-}
-
-.botones button:last-child {
-  margin-right: 0; 
-}
-
 @media screen and (max-width: 500px){
   .square {    
     margin: 0.3rem;    
@@ -111,12 +104,12 @@ button:hover{
   #colorDisplay{
     font-size: 2.3rem;
   }
+  button{
+    font-size: 0.8rem;
+  }
 
-  .botones button {
-    margin-right: 1.5rem; 
+  .botones{
+    max-width: 300px;
   }
   
-  .botones button:last-child {
-    margin-right: 0; 
-  }
 }
